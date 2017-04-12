@@ -1,0 +1,85 @@
+{
+  "name": "mjsisley/netlify-test",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "test",
+  "branch": "",
+  "style": {
+    "name": "Williamsburg",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/LightBannerHeader",
+      "article": "article/ReaderArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "Montserrat, sans-serif",
+    "heading": {
+      "fontWeight": 600,
+      "letterSpacing": "0.1em"
+    },
+    "colors": {
+      "text": "#346",
+      "background": "#fff",
+      "primary": "#0099e0",
+      "secondary": "#ab61ff",
+      "highlight": "#f7b",
+      "muted": "#fffab3",
+      "border": "#ccd"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://github.com/mjsisley/netlify-test",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://npmjs.com/package/victor-hugo",
+          "text": "npm"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "netlify-test",
+      "subhead": "Victor Hugo is a Hugo boilerplate for creating truly epic websites!",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "netlify-test: Victor Hugo is a Hugo boilerplate for creating truly epic websites!",
+          "url": null
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "mjsisley",
+          "repo": "netlify-test"
+        }
+      ],
+      "text": "v1.0.0"
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "<h1>Netlify CMS small-business template</h1>\n<p>This is a small business template built with <a href=\"https://github.com/netlify/victor-hugo\">Victor Hugo</a> and <a href=\"https://github.com/netlify/netlify-cms\">Netlify CMS</a>, designed and developed by <a href=\"http://www.darindimitroff.com/\">Darin Dimitroff</a>, <a href=\"https://www.spacefarm.digital\">spacefarm.digital</a>.</p>\n<h2>Getting started</h2>\n<p>Use our deploy button to get your own copy of the repository:</p>\n<p><a href=\"https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/kaldi-hugo-cms-template\"><img src=\"https://www.netlify.com/img/deploy/button.svg\"></a></p>\n<p>Once that is done, you need to setup the GitHub integration for Netlify CMS.</p>\n<p>Go to <a href=\"https://github.com/settings/developers\">https://github.com/settings/developers</a> and register a new application.</p>\n<p>Then go to the &quot;Access&quot; tab in your new Netlify site and add a GitHub authentication provider.</p>\n<p>Once that&apos;s done, you&apos;ll be able to enter the CMS by going to the URL of your new site and appending <code>/admin</code></p>\n<h2>Local Development</h2>\n<p>Clone this repository, and run <code>yarn</code> or <code>npm install</code> from the new folder to install all required dependencies.</p>\n<p>Then start the development server with <code>yarn start</code> or <code>npm start</code>.</p>\n<h2>Layouts</h2>\n<p>The template is based on small, content-agnostic partials that can be mixed and matched. The pre-built pages showcase just a few of the possible combinations. Refer to the <code>site/layouts/partials</code> folder for all available partials.</p>\n<p>Use Hugo&#x2019;s <code>dict</code> functionality to feed content into partials and avoid repeating yourself and creating discrepancies.</p>\n<h2>CSS</h2>\n<p>The template uses a custom fork of Tachyons and PostCSS with cssnext and cssnano. To customize the template for your brand, refer to <code>src/css/imports/_variables.css</code> where most of the important global variables like colors and spacing are stored.</p>\n<h2>SVG</h2>\n<p>All SVG icons stored in <code>site/static/img/icons</code> are automatically optimized with SVGO (gulp-svgmin) and concatenated into a single SVG sprite stored as a a partial called <code>svg.html</code>. Make sure you use consistent icons in terms of viewport and art direction for optimal results. Refer to an SVG via the <code>&lt;use&gt;</code> tag like so:</p>\n<pre>&lt;svg width=<span class=\"hljs-string\">&quot;16px&quot;</span> height=<span class=\"hljs-string\">&quot;16px&quot;</span> <span class=\"hljs-class\"><span class=\"hljs-keyword\">class</span></span>=<span class=\"hljs-string\">&quot;db&quot;</span>&gt;\n  <span class=\"xml\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">use</span> <span class=\"hljs-attr\">xlink:href</span>=<span class=\"hljs-string\">&quot;#SVG-ID&quot;</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">use</span>&gt;</span></span>\n&lt;<span class=\"hljs-regexp\">/svg&gt;</span></pre>"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/mjsisley/netlify-test",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/mjsisley",
+          "text": "mjsisley"
+        }
+      ]
+    }
+  ]
+}
